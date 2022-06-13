@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arrow Function Examples</title>
 </head>
 <body>
 <p id="display"></p>
-
-<p id="sumResults"></p>
+<p id="sumResult"></p>
+<p id="anotherResult"></p>
 <script>   
-//Basic Example :: 1
-const myFunc = () => {
-    return (
-        "Hello, This is a Arrow function example"
-    )
-}
-document.getElementById('display').innerHTML=myFunc();
+    //Basic Example :: 1st
+    const myFunc = () => {
+        return (
+            "Hello, This is a Arrow function example"
+        )
+    }
+    document.getElementById('display').innerHTML=myFunc();
 
-//Example :: 2
-const sumFunction = (x,y) => {
-    return( 
-        x + y
-    )
-}
-document.getElementById('sumResults').innerHTML = "The result is " +sumFunction(5,2);
+    //Example :: 2nd
+    const sumFunction = (x,y) => {
+        return( 
+            x + y
+        )
+    }
+    document.getElementById('sumResult').innerHTML = "The result is " +sumFunction(5,2);
+
+    //Example :: 3rd
+    const anotherFunction = (x,y) => { return x + y }
+    document.getElementById('anotherResult').innerHTML = "The result is " +anotherFunction(10,3);
 </script>
 </body>
 </html>
